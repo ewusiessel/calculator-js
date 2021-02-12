@@ -1,6 +1,8 @@
 body {
   background-color: #0d0e0e;
   margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 60px;
 }
 
 #calculator {
@@ -10,12 +12,18 @@ body {
   justify-content: center;
 }
 
+#calculator table {
+  max-width: 380px;
+}
+
 input [type="button"],
 #result,
 .numericButton,
 .functionButton {
   border: none;
   border-radius: 2px;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 input[type="button"] {
@@ -26,4 +34,6 @@ input[type="button"] {
 #result {
   width: calc(100% - 2rem);
   padding: 0 1rem;
+  color: #0d0e0e;
+  background-color: #efefef;
 }
